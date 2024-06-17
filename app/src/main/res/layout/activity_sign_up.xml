@@ -20,7 +20,8 @@
             android:id="@+id/logoimage2"
             android:layout_width="108dp"
             android:layout_height="150dp"
-            android:src="@drawable/maidsplashimage" />
+            android:src="@drawable/maidsplashimage"
+            android:transitionName="logo_image"/>
 
         <TextView
             android:id="@+id/welcometitle2"
@@ -29,6 +30,7 @@
             android:fontFamily="@font/bungee"
             android:padding="0dp"
             android:text="Welcome"
+            android:transitionName="logo_text"
             android:textColor="#000"
             android:textSize="40sp" />
 
@@ -36,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SignUp to become our member"
+            android:transitionName="entry_text"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:layout_marginTop="5dp"
@@ -67,6 +70,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/username2"
                 android:layout_marginTop="3dp"
+                android:transitionName="useranimation"
                 app:hintTextColor="@color/black"
                 android:hint="Username"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
@@ -116,12 +120,15 @@
                 android:id="@+id/password"
                 android:layout_marginTop="3dp"
                 app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
                 android:hint="Password"
+                android:transitionName="passwordanimation"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="textPassword"
                     android:textColor="@color/black"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -130,6 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:text="GO"
+                android:transitionName="goanim"
                 android:elevation="0dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
@@ -140,6 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
+                android:transitionName="newuseranim"
                 android:elevation="0dp"
                 android:layout_marginTop="1dp"
                 android:textColor="@color/black"

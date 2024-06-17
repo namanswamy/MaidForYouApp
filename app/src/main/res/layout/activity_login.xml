@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:fontFamily="@font/bungee"
+            android:transitionName="logo_text"
             android:text="Hello there , Welcome back"
             android:textColor="#000"
             android:textSize="40sp" />
@@ -39,6 +40,7 @@
         android:layout_marginStart="2dp"
         android:textColor="@color/black"
         android:text="Sign In to continue"
+        android:transitionName="entry_text"
         android:textSize="18sp" />
 
     <LinearLayout
@@ -53,6 +55,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             app:hintTextColor="@color/black"
+            android:transitionName="useranimation"
             android:hint="Username"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
@@ -69,6 +72,7 @@
             android:id="@+id/password"
             app:hintTextColor="@color/black"
             android:hint="Password"
+            android:transitionName="passwordanimation"
             app:passwordToggleEnabled="true"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
@@ -87,6 +91,7 @@
             android:layout_marginTop="5dp"
             android:elevation="5dp"
             android:padding="0dp"
+            android:id="@+id/forgotpass"
             android:text="FORGET PASSWORD?"
             android:textColor="@color/black"
             app:backgroundTint="@color/white"
@@ -96,9 +101,11 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:text="GO"
+            android:id="@+id/gobutton"
             android:elevation="0dp"
             android:layout_marginTop="5dp"
             android:textColor="@color/white"
+            android:transitionName="goanim"
             app:backgroundTint="@color/black"
             app:cornerRadius="3dp"/>
 
@@ -108,6 +115,7 @@
             android:id="@+id/signupbutton"
             android:text="NEW USER? SIGN UP"
             android:elevation="0dp"
+            android:transitionName="newuseranim"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
             app:backgroundTint="#00000000"
